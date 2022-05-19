@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RAZORPAY RIZE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        *{
+           
+            margin: 0px;
+            padding: 0px;
+            
+            
+        }
+        .acctext{
+            color: #fff;
+        }
+        .frontpage {
+            height: 800px;
+            width: 100%;
+            background-image:url("Images/fpbg.png"), url("Images/fpbg1.png"), url("Images/fpbg2.png"),url("Images/cloudleft.png"),url("Images/cloudleftorange.png"),url("Images/cloudorangetop.png"),url("Images/sun.png");
+            background-repeat: no-repeat;
+            background-size:100%, 1800px, 1800px, 500px, 1700px,  1000px,3150px;
+            background-position: -30px -220px, center top, center top -40px,left top,center top,center top,-1150px -350px;
+            position: absolute;
+            margin-top: 0%;
+            background-color: rgb(13, 36, 81);
+        }
+        span{
+            color: rgb(252, 156, 45);
+        }
+        .heading {
+            position: relative;
+            font-size: 20px;
+            color:aliceblue;
+            padding-left: 10%;
+            padding-top: 8%;
+            height: 700px;
+          
+        }
+
+        .heading h1 {
+            font-size: 50px;
+        }
+        .heading p{
+            font-size: 15px;
+        }
+        .heading h6{
+            font-size: 20px;
+        }
+        
+        .heading2 {
+            padding-left: 10%;
+            padding-top: 10%; 
+            position: absolute;
+            
+        }
+         .heading3{
+            padding-left: 10%;
+            padding-top: 20%;
+            padding-bottom: 10%;
+            padding-right: 5%;
+            color: aliceblue;
+            
+            background-color: rgb(13, 36, 81);
+           
+        }
+        .heading3 p{
+            font-size: 20px;
+        }
+        
+        
+        .oneline{         
+            flex-direction: column;
+            float: none;
+          
+            height: 50px;
+            padding-bottom: 2%;
+            padding-left: 9%;
+            background-color: rgb(13, 36, 81);
+            color: aliceblue;
+        }
+        .rizestart{
+            
+           
+            overflow: hidden;
+            position: relative;
+         
+            padding-left: 0%;
+            padding-bottom: 10%;
+            background-color: rgb(13, 36, 81);
+            color: aliceblue;
+            background-image: url("Images/orangetower.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 700px;
+         
+        }
+        .rizestart h1{
+            font-size: 50px;
+        }
+        .rizestart  h5{
+            font-size: 50px;
+        }
+        .rizestart p{
+            font-size: 20px;
+        }
+        .rizetools{
+            
+            padding-left:0%;
+            background-color: rgb(159, 50, 112);
+            color: aliceblue;
+        }
+        .img{
+            float: left;
+            margin-right: 10px;
+        }
+        .text h4{
+            color: rgb(209, 128, 21);
+        }
+        .oneline2{
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 10%;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+            height: 40px;
+            color: aliceblue;
+            background-color: rgb(159, 50, 112);
+        }
+        .rizetools2{
+            padding-top: 10%;
+            padding-left: 10%;
+            padding-right: 5%;
+            background-color: rgb(159, 50, 112);
+            margin-top: 0px;
+            color: aliceblue;
+        }
+        
+        .img2{
+            float: left;
+            margin-right: 10px;
+        }
+        .text2{
+            padding-top: 10px;
+            font-size: 20px;
+            font-style: italic;
+            color: aliceblue;
+        }
+        .accept{
+            background-color: rgb(97, 96, 96);
+            color: aliceblue;
+            width: 150px;
+            height: 25px;
+            
+        }
+        .img3{
+            float: left;
+            margin-right: 10px;
+        }
+        .text3{
+            padding-top: 10px;
+            font-size: 20px;
+            font-style: italic;
+            color: aliceblue;
+        }
+        .banking{
+            background-color: rgb(97, 96, 96);
+            color: aliceblue;
+            width: 150px;
+            height: 25px;
+            
+        }
+       
+        .rizetools3{
+           
+            padding-left: 10%;
+            padding-right: 5%;
+            padding-top: 5%;
+            background-color: rgb(159, 50, 112);
+            color: aliceblue;
+        }
+       
+        .payroll{
+            background-color: rgb(97, 96, 96);
+            color: aliceblue;
+            width: 150px;
+            height: 25px;
+        }
+        .credit{
+            background-color: rgb(97, 96, 96);
+            color: aliceblue;
+            width: 150px;
+            height: 25px;
+        }
+        .gray{
+            background-color: rgb(97, 96, 96);
+            color: aliceblue;
+            width: 200px;
+            height: 25px;
+        }
+        .oneline3{
+            padding-bottom: 8%;
+        }
+        .rizetools4{
+            padding-top: 8%;
+            padding-left: 10%;
+            padding-right: 5%;
+            background-color: rgb(153, 42, 94);
+            color: aliceblue;
+        }
+        .text2{
+            font-size: 20px;
+            padding-bottom: 2px;
+            font-style: italic;
+        }
+        .rizetools5{
+            padding-top: 5%;
+            padding-left: 10%;
+            padding-right: 5%;
+            padding-bottom: 2%;
+            background-color: rgb(153, 42, 94);
+            color: aliceblue;
+        }
+        .rizetools6{
+            padding-top: 5%;
+            padding-left: 10%;
+            padding-right: 5%;
+            background-color: rgb(129, 34, 85);
+            color: aliceblue;
+        }
+        .rizetools7{
+            padding-top: 5%;
+            padding-left: 10%;
+            padding-right: 5%;
+            background-color: rgb(129, 34, 85);
+            color: aliceblue;
+            padding-bottom: 2%;
+        }
+        .rizeconnect{
+            padding-top: 10%;
+            padding-left: 10%;
+            background-color: rgb(9, 9, 73);
+            color: aliceblue;
+            background-image: url("Images/hand.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 850px;
+        }
+        .rizeconnect p{
+            font-size: 20px;
+        }
+        .rizeconnect3{
+            padding-top: 15%;
+            padding-left: 10%;
+            padding-bottom: 5%;
+            background-color:rgb(9, 9, 73);
+            color: aliceblue;
+            background-image: url("Images/robo.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 700px;
+        }
+        .rizeconnect3 p{
+            font-size: 25px;
+        }
+        .cur{
+           color: aliceblue;
+        } 
+        .cont
+        {
+            height: 50%;
+            border: 2px solid rgb(39, 39, 208);
+            margin-left:30%;            
+            width: 40%;
+            background-color: rgb(12, 12, 65);
+            color: aliceblue;
+            margin-top: 5%;
+            border-radius: 15px;
+        }
+        #carouselExampleControls{
+            background-color: rgb(13, 36, 81);
+            background-image: url("Images/curcloud.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 800px;
+        }
+        #accordion{
+           
+            padding-left: 25%;
+            padding-right: 25%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            background-color: rgb(9, 9, 73);
+            color: white;
+           
+        }
+       
+        .card{
+           
+            background-color: rgb(46, 39, 122);
+        }
+        .acctext:hover
+        {
+            color: #fff;
+        }
+        .footer{
+            
+            padding-top: 1%;
+            padding-left: 10%;
+            padding-bottom: 1%;
+            background-color: rgb(37, 62, 100);
+            color: rgb(131, 124, 124);
+            font-style: italic;
+            
+        }
+       
+        html
+        {
+            scroll-behavior: smooth;
+        }
+        .faq{
+            
+            padding-bottom: 100px;
+            color: white;
+            background-color:  rgb(9, 9, 73);
+            height: 50px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="total">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <div class="nav-left">
+            <a class="navbar-brand" href="#"><img src="Images/razonpay.svg" alt="logo"></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="nav-right">
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rizestart">Rize.Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rizetool">Rize.Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rizeconnect">Rize.Connect</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary" type="submit">Register Now</button>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+        <div class="total">
+            <div class="frontpage">
+            </div>
+        </div>
+
+        <div class="heading" id="heading">
+            <div class="col-sm-6">
+                <div class="col">
+
+                    <h1>Building a startup is challenging. We’re here to help you grow!</h1>
+                    <br>
+                    <h3>Let's Rize Together</h3>
+                    <br>
+                    <h6>Company incorporation in India solved! Experience it today. Unlock exclusive <span>deals worth upto
+                        $300,000.</span>
+                        ‍Become part of an invite-only, founders only community.</h6>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Register Now</button>
+                    <br>
+                    
+                    <p>Unable to view form <span>Click Here</span></p>
+                </div>
+            </div>
+        </div>
+
+        
+           <div class="heading2">
+                <img src="Images/razonpay.svg">
+            </div>
+
+            
+        <div class="heading3" >
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="Images/one.png" height="120px" width="120px">
+                    <br>
+                    <br>
+                    <h4>Rize.Start</h4>
+                    <h1><span>Start your<br>
+                        business</span></h1>
+                        <br>
+                    <p>Company incorporation in India and solved ! Experience it today.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="Images/two.png" height="96px" width="96px">
+                    <br>
+                    <br>
+                    <h4>Rize.Tool</h4>
+                    <h1><span>Tools to help<br>
+                        you grow</span></h1>
+                        <br>
+                    <p>Claim upto $<span>300,000</span> in credits across Razorpay products & partner deals (includes Notion, Retool,
+                        Freshworks & others)</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="Images/three.png" height="108px" width="96px">
+                    <br>
+                    <br>
+                    <h4>Rize.Control</h4>
+                    <h1><span>Connect with<br>
+                        the community</span></h1>
+                        <br>
+                    <p>Grow together with peers - share, learn and collaborate with likeminded founders.</p>
+                </div>
+            </div>
+        </div>
+    
+
+
+        
+                    
+                    
+                
+
+                    <div class="oneline">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-6">
+                    <h1>Rize Founders Experiences</h1>
+                  </div> 
+                  </div>
+                  </div>
+                  </div>
+
+
+                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="d-block w-100 text-center">
+            
+                            <p class="cont">In myxperience of building products and a company, I have always struggled with one thing, where to start. Razorpay Rize as a forum has been able to solve that kick-start problem. You can get your company set up, up, and running with most of the operations part taken care of. This lets you focus on building the core product and company. Plus, the community itself is there to help you achieve success, and resolve any issues quickly, which motivates you a lot. The various events help you to learn from industry experts on niche topics, which otherwise are hard to find.                            </p>
+                            <img src="Images/avatar.jpg" height="100px" width="100px">
+                            <h4 class="cur">Name: Mani</h4>
+                            <h4 class="cur">Airtibu</h4>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="d-block w-100 text-center">
+            
+                            <p class="cont">It’s been an interesting experience to be a part of the Rize community so far. Have been able to connect with so many other creators and founders, which has helped me mentally to keep going and continue creating value for my business. I’m glad to have a support system with Razorpay’s team, their constant efforts to engage the community and bring us valuable deals to build our businesses.                            </p>
+                            <img src="Images/avatar.jpg" height="100px" width="100px">
+                            <h4 class="cur">Name: Amith</h4>
+                            <h4 class="cur">Sui-curn</h4>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="d-block w-100 text-center">
+            
+                            <p class="cont">Rize Start has been a huge help! The tools and deals seem very helpful for startups. Due to our small scale and use cases we haven't used much of those but surely they'll help us in future. I also found the Rize community to be fairly helpful. It is a great place to share my thoughts with like minded people, and talk with a few members privately too. Most importantly, as a beginner in the field of entrepreneurship, an easy networking place is always a boon! All three pillars of the Rize program are really helpful.  I can't thank Razorpay enough for it!                            </p>
+                            <img src="Images/avatar.jpg" height="100px" width="100px">
+                            <h4 class="cur">Name: Arun</h4>
+                            <h4 class="cur">Shilpiyan</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  
+                  
+                 
+
+
+
+                  <div class="rizestart" id="rizestart">
+                    <div class="container">
+                     <div class="row">
+                       <div class="col">
+                         <h3>Rize.Start</h3>
+                         <br>
+                           <h1><span>First things first.</span></h1>
+                           <h5>Let’s start by registering your business.</h5>
+                       </div>
+                       <div class="col">
+                         <p>Company incorporation in India solved! Enabled through our trusted partners.</p>
+                       </div>
+                     </div>
+                     </div>
+                     </div>
+
+
+                <div class="rizetools" id="rizetool">
+                    <div class="container">
+                     <div class="row">
+                       <div class="col">
+                         <h3>Rize.Tools</h3>
+                         <br>
+                         <h1>Access over <span>$300,000 worth of credits.</span></h1>
+                         <h5>We’ve curated three unique tool suites, that every startup needs to grow.</h5>
+                       </div>
+                       <div class="col">
+                         <div class="img"><img src="Images/tool1.svg"></div>
+                         <div class="text">
+                             <h4>01</h4>
+                             <h1>Razorpay</h1>
+                             <h3>Products</h3>
+                         </div>
+                         <div class="img"><img src="Images/tool2.svg"></div>
+                         <div class="text">
+                             <h4>02</h4>
+                             <h1>Razorpay</h1>
+                             <h3>Products</h3>
+                         </div>
+                         <div class="img"><img src="Images/tool3.svg"></div>
+                         <div class="text">
+                             <h4>03</h4>
+                             <h1>Razorpay</h1>
+                             <h3>Products</h3>
+                         </div>
+                         </div>
+                       </div>
+                       </div>
+                     </div>
+
+
+                <div class="oneline2">
+                    <p>Razorpay Products</p>
+                </div>
+
+
+                <div class="rizetools2">
+                    <div class="row">
+                   <div class="col-sm-6">
+                    <div class="imgtext">   
+                    <div class="img2">
+                       <img src="Images/razor.png" height="40px" width="180px">
+                    </div>
+                    <div class="text2">PAYMENTS</div>
+                </div>
+                <br>
+                <br>
+                       <h5>Free credits on transactions up to <span>INR 3,00,000</span> or up to 6 months, whichever is earlier</h5>
+                       <br>
+                       <div class="accept">ACCEPT PAYMENTS</div>
+                       <br>
+                       <p>With the easiest integration, completely online onboarding, feature filled checkout and best in class performance, quickly go live with Razorpay.</p>
+                       <p>This deal is only applicable for new sign ups. Startups with existing relationship can redeem the credits only for those products  for which they are currently NOT-LIVE on Razorpay.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="img3">
+                            <img src="Images/razorx.png" height="40px" width="180px">
+                         </div>
+                         <div class="text3">BANKING</div>
+                         <br>
+                         <br>
+                        <h5>1000 free payout or 6 months (whichever earlier) + <span>INR 3,00,000 additional credits</span></h5>
+                        <br>
+                        <div class="banking">BUSINESS BANKING</div>
+                        <br> 
+                        <p>Manage your company’s finances with a Business Banking Hub. Open a fully digital current account, automate payables & compliance payments & more!</p>
+                        <p>This deal is only applicable for new sign ups. Startups with existing relationship can redeem the credits only for those products  for which they are currently NOT-LIVE on Razorpay.</p>
+                    </div>
+                    </div>
+                </div>
+                
+
+
+                <div class="rizetools3">
+                    <div class="row">
+                   <div class="col-sm-6">
+                    <div class="imgtext">   
+                    <div class="img2">
+                       <img src="Images/razorx.png" height="40px" width="180px">
+                    </div>
+                    <div class="text2">PAYROLL</div>
+                </div>
+                <br>
+                <br>
+                       <h5><span> months free payroll + Additional 6 months free with XCA</span></h5>
+                       <br>
+                       <div class="payroll">AUTOMATE PAYROLL</div>
+                       <br>
+                       <p>Calculate payroll and disburse salaries in just a few clicks.</p>
+                       <p>This deal is only applicable for new sign ups. Startups with existing relationship can redeem the credits only for those products  for which they are currently NOT-LIVE on Razorpay.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="img3">
+                            <img src="Images/razor.png" height="40px" width="180px">
+                         </div>
+                         <div class="text3">CARPORATE CARD</div>
+                         <br>
+                         <br>
+                        <h5><span>Collateral free Corporate card on Day 0</span></h5>
+                        <br>
+                        <div class="credit">CAPITAL & CREDIT</div>
+                        <br> 
+                        <p>Stop worrying about business spends with a card actually designed for growing businesses, for once!</p>
+                        <p>This deal is only applicable for new sign ups. Startups with existing relationship can redeem the credits only for those products  for which they are currently NOT-LIVE on Razorpay.</p>
+                    </div>
+                    </div>
+                </div>
+
+
+                
+
+                
+                <div class="rizetools4">
+
+                    <div class="oneline3">
+                        <h4>LOW CODE / NO CODE TOOLS</h4>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <img src="Images/notion.png" height="40px">
+                            <br>
+                            <br>
+                            <br>
+                            <h4><span>$1,000 off their Team Plan</span></h4>
+                            <br>
+                            <div class="gray"><p>ALL-IN-ONE ORKSPACE</p></div>
+                            <br>
+                        <p>One tool for your whole team. Write, plan, and get organized - all in one highly customizable workspace.</p>
+                        </div>
+                          <div class="col-sm-4">
+                            <img src="Images/retool.png" height="40px">
+                            <br>
+                            <br>
+                            <br>
+                        <h4><span>$1,200 credits for Retool Cloud version</span></h4>
+                        <br>
+                        <div class="gray"><P>BUILD INTERNAL TOOLS</P></div>
+                        <br>
+                        <p>Retool is a low-code platform that makes it fast and easy to build internal tools to drive faster operations and better business outcomes.</p>
+                        </div>
+                          <div class="col-sm-4">
+                              <div class="img2">
+                            <img src="Images/retool.png" height="40px">
+                        </div>
+                        <div class="text2">For Startups</div>
+                            <br>
+                            <br>
+                            
+                        <h4><span>$160k in discounts, perks, and credits</span></h4>
+                        <br>
+                        <div class="gray"><p>ALL-IN-ONE ORKSPACE</p></div>
+                        <br>
+                        <p>Get credits and perks from AWS, Brex, Segment, Amplitude, Hubspot, Zendesk etc. and membership to the Retool for Startups program.</p> 
+                    </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="rizetools5">
+                        <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <img src="Images/integromate.png" height="40px">
+                                <br>
+                                <br>
+                                <br>
+                                <h4><span>6 months free sub- scription on Startup plan</span></h4>
+                                <br>
+                                <div class="gray"><p>AUTOMATE WORKFLOW</p></div>
+                                <br>
+                            <p>Move data between apps without effort so you can focus on growing your business. Integromat lets you connect apps & automate workflows in a few clicks.</p>
+                            </div>
+                              <div class="col-sm-4">
+                                <img src="Images/verloop.png" height="40px">
+                                <br>
+                                <br>
+                                <br>
+                            <h4><span>Verloop credits worth $10,000</span></h4>
+                            <br>
+                            <div class="gray"><P>BUILD CHATBOTS</P></div>
+                            <br>
+                            <p>Deliver delightful customer support experiences via multiple channels like Whatsapp, Facebook, the Web, and within the app, with Verloop.io</p>
+                            </div>
+                              <div class="col-sm-4">
+                                  <div class="img2">
+                                <img src="Images/unicorn.png" height="40px">
+                            </div>
+                            <div class="text2">Unicorn Platform</div>
+                                <br>
+                                <br>
+                            <h4><span>50% discount of any paid plan</span></h4>
+                            <br>
+                            <div class="gray"><p>LANDING PAGE BUILDER</p></div>
+                            <br>
+                            <p>The simplest drag & drop landing page builder for startups, mobile apps, and SaaS. 100% no-code.</p> 
+                        </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        
+
+
+                        <div class="rizetools6">
+                            <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-sm-4">
+                                    <img src="Images/aws.png" height="40px">
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <h4><span>$5,000 in AWS Activate Credits valid for 2 years, 1 year of AWS Business Support (up to $1,500).</span></h4>
+                                    <br>
+                                    <div class="gray"><p>IT & SOFTWARE</p></div>
+                                    <br>
+                                <p>Access a host of free benefits, including AWS Cloud credits, AWS Business Support credits, exclusive members-only offers, and access to the Activate Console to help build and grow your business.</p>
+                                </div>
+                                  <div class="col-sm-4">
+                                    <img src="Images/mispanel.png" height="40px">
+                                    <br>
+                                    <br>
+                                    <br>
+                                <h4><span>$50,000 credits on Mixpanel’s growth plan</span></h4>
+                                <br>
+                                <div class="gray"><P>PRODUCT ANALYTICS</P></div>
+                                <br>
+                                <p>Powerful, flexible, and easy-to-use, Mixpanel enables teams to learn from their user data and innovate rapidly in creating winning products and helps you convert, engage, and retain more users.</p>
+                                </div>
+                                  <div class="col-sm-4">
+                                    <img src="Images/legto.png" height="40px">
+                                    <br>
+                                    <br>
+                                <h4><span>10% discount on Legato consultations</span></h4>
+                                <br>
+                                <div class="gray"><p>LEGAL CONSULTING</p></div>
+                                <br>
+                                <p>With 2,000+ lawyers and 10,000+ clients, LegatoApp brings you legal expertise through a tech-integrated marketplace for legal professionals.</p> 
+                            </div>
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <div class="rizetools7">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                      <div class="col-sm-4">
+                                        <img src="Images/burn.png" height="40px">
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <h4><span>20% discount on 1 month Premium BurnCal Membership</span></h4>
+                                        <br>
+                                        <div class="gray"><p>HOLISTIC FITNESS SOLUTION</p></div>
+                                        <br>
+                                    <p>BurnCal gives access to elite fitness coaches who make a personalised workout and nutrition plan that is just right for you. Moreover, the coaches check in with you daily to ensure you never miss a workout again</p>
+                                    </div>
+                                      <div class="col-sm-4">
+                                        <img src="Images/zoho.png" height="40px">
+                                        <br>
+                                        <br>
+                                        <br>
+                                    <h4><span>25% off on Zoho finance apps</span></h4>
+                                    <br>
+                                    <div class="gray"><P>FINANCE SUITE</P></div>
+                                    <br>
+                                    <p>Streamline your finances, automate your workflows and work across departments seamlessly with the Zoho Finance suite of applications.</p>
+                                    </div>
+                                      <div class="col-sm-4">
+                                        <img src="Images/zeda.png" height="40px">
+                                        <br>
+                                        <br>
+                                    <h4><span> months free & 50% off after that for 6 months</span></h4>
+                                    <br>
+                                    <div class="gray"><p>PRODUCT MANAGEMENT</p></div>
+                                    <br>
+                                    <p>Building a product is critical to a startup. Zeda.io is a complete product management platform. It lets you collect requests, define products, and manage roadmaps in one place.</p> 
+                                </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+                                <div class="rizeconnect" id="rizeconnect">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            <h3>Rize.Connect</h3>
+                                            <br>
+                                            <h1>Become part of
+                                                a founders only
+                                                community</h1>
+                                                <br>
+                                                <p>Grow together with peers - share, learn and collaborate with Like-minded founders</p>
+                                            </div>
+                                    </div>
+                                </div>
+                                </div>
+
+
+
+                                <div class="faq" id="faq">
+                                    <h1>Frequently asked questions</h1>
+                                </div>
+
+                                <div id="accordion">
+                                    <div class="card">
+                                      <div class="card-header" id="headingOne">
+                                        <h5 class="mb-0">
+                                          <button class="btn collapsed acctext" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            What is Razorpay Rize?
+                                          </button>
+                                        </h5>
+                                      </div>
+                                  
+                                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <h6>What is Razorpay Rize?</h6><br>
+                                            Razorpay Rize is a startup program focused on the growth journey of early stage and bootstrapped startups.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card">
+                                      <div class="card-header" id="headingTwo">
+                                        <h5 class="mb-0">
+                                          <button class="btn collapsed acctext" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">                  
+                                            Who can join Razorpay Rize?
+                                          </button>
+                                        </h5>
+                                      </div>
+                                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <h6>Who can join Razorpay Rize?</h6><br>
+                                            All bootstrapped and early stage startups who have raised no more than $5M in funding can join Razorpay Rize.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card">
+                                      <div class="card-header" id="headingThree">
+                                        <h5 class="mb-0">
+                                          <button class="btn collapsed acctext" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            What are the benefits provided to startups under the program?
+                                          </button>
+                                        </h5>
+                                      </div>
+                                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <h6>What are the benefits provided to startups under the program?</h6>
+                                            In the beta program, 3 benefits will be provided to startups -
+                                            <ul>
+                                             <li>Rize.Start - Incorporate your startup with us.</li> 
+                                             <li>Rize.Tools - Curated set of Razorpay products, no-code tools and other tools with exclusive credits / discounts to accelerate your growth</li> 
+                                            <li>Rize.Connect - Become part of a founders-only community</li> 
+                                        </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                          <h5 class="mb-0">
+                                            <button class="btn collapsed acctext" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">                  
+                                                What is the process to join Razorpay Rize?
+                                            </button>
+                                          </h5>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                          <div class="card-body">
+                                            <h6>What is the process to join Razorpay Rize?</h6>
+                                            1. Now that you’re here, click on 'Join the Waitlist'<br>
+                                            2. Enter details of your startup<br>
+                                            3. Keep an eye out in your inbox. We will get right back!
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="card">
+                                        <div class="card-header" id="headingFive">
+                                          <h5 class="mb-0">
+                                            <button class="btn collapsed acctext" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">                  
+                                             Can startups who are already incorporated join Razorpay Rize?
+                                            </button>
+                                          </h5>
+                                        </div>
+                                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                          <div class="card-body">
+                                            <h6>Can startups who are already incorporated join Razorpay Rize?</h6>
+                                            Yes! You can still avail the benefits on Razorpay product, low code / no code tools, partner deals and become a part of the founders only community.
+                                        </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                
+
+
+                                <div class="rizeconnect3">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <h1>Join Razorpay
+                                                    Rize today!</h1>
+                                                    <p>
+                                                        Become the pioneers of Razorpay’s
+                                                        first Startup Program.</p>
+                                                        <button class="btn btn-primary" type="submit">Register Now</button>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                </div>
+
+
+                                              <div class="footer">
+                                                <h4>know more about <img src="Images/razonpay.svg" height="100px" width="200px"></h4>
+                                              </div>
+
+</body>
+
+</html>
